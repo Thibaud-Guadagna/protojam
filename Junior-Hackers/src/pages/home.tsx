@@ -1,32 +1,58 @@
-
+import ModalExample from "../components/modal";
+import AnimatedTitle from "../components/animatedTitle";
+import AlgobotWithSpeech from "../components/AlgobotWhiteSpeech";
+import FloatingElements from "../components/floatingElements";
 
 function Home() {
 	return (
-		<>
-			<section>
+		<main className="min-h-screen flex flex-col  justify-center text-center px-4">
+			<FloatingElements />
+
+			<header>
 				<div>
-					<h1 className="flex justify-center text-[#fc752c] text-3xl">
-						Junior Hackers
-					</h1>
+					<AnimatedTitle text="Junior Hackers" />
 				</div>
-				<div className="flex justify-center">
-					<img className="w-40 h-40" src="/Algobot.png" alt="Algobot" />
+				<div>
+					<AlgobotWithSpeech />
 				</div>
-			</section>
-			<section className="flex justify-around gap-4">
-				<button className="border-2 rounded-sm p-2" type="button">
+			</header>
+			<section className="flex justify-around gap-4 mt-10 md:mt-20">
+				<button
+					type="button"
+					className="border-2 border-gray-800 text-gray-800 font-semibold rounded-sm px-4 py-2
+             transition-transform duration-150 ease-in-out
+             hover:-translate-y-1 hover:shadow-md hover:border-gray-900 hover:text-gray-900
+             active:scale-95"
+				>
 					Jouer Seul
 				</button>
-				<button className="border-2 rounded-sm p-2" type="button">
+
+				<button
+					type="button"
+					className="border-2 border-gray-800 text-gray-800 font-semibold rounded-sm px-4 py-2
+             transition-transform duration-150 ease-in-out
+             hover:-translate-y-1 hover:shadow-md hover:border-gray-900 hover:text-gray-900
+             active:scale-95"
+				>
 					Jouer à 2
 				</button>
 			</section>
 
-		<section>
+			<section>
+				<ModalExample />
+			</section>
 
-
-		</section>
-		</>
+			<footer className="flex flex-col justify-center mb-5">
+				<p className="text-center text-sm text-gray-500 mt-4 md:mt-8">
+					© {new Date().getFullYear()} Junior Hackers – Tous droits réservés ·{" "}
+				</p>
+				<p>
+					<a href="/contact" className="text-blue-500 hover:underline">
+						Contact
+					</a>
+				</p>
+			</footer>
+		</main>
 	);
 }
 

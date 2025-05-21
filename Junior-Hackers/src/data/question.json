@@ -1,0 +1,640 @@
+{
+  "categories": [
+    {
+      "name": "Informatique",
+      "questions": [       
+        {
+          "question": "Quel composant est le cerveau d'un ordinateur ?",
+          "options": ["La RAM", "Le disque dur", "Le processeur", "L'alimentation"],
+          "answer": "Le processeur",
+          "explanation": "Le processeur (ou CPU) exécute les instructions et coordonne toutes les opérations de l’ordinateur."
+        },
+        {
+          "question": "Quel est le système binaire de 10 ?",
+          "options": ["1010", "1100", "1001", "1111"],
+          "answer": "1010",
+          "explanation": "En binaire, 10 s’écrit 1010 (1×8 + 0×4 + 1×2 + 0×1)."
+        },
+        {
+          "question": "Que signifie l'acronyme RAM ?",
+          "options": ["Random Access Memory", "Rapid Access Module", "Remote Action Machine", "Ready Application Memory"],
+          "answer": "Random Access Memory",
+          "explanation": "RAM signifie Random Access Memory, c’est la mémoire vive temporaire de l’ordinateur."
+        },
+        {
+          "question": "Quel périphérique permet de saisir du texte ?",
+          "options": ["Souris", "Clavier", "Écran", "Scanner"],
+          "answer": "Clavier",
+          "explanation": "Le clavier permet de saisir du texte et de contrôler des commandes."
+        },
+        {
+          "question": "Lequel de ces systèmes d'exploitation est libre ?",
+          "options": ["Windows", "macOS", "Linux", "iOS"],
+          "answer": "Linux",
+          "explanation": "Linux est un système d’exploitation libre et open-source."
+        },
+        {
+          "question": "Quelle unité mesure la fréquence d’un processeur ?",
+          "options": ["Hz", "Watt", "Ohm", "Ampère"],
+          "answer": "Hz",
+          "explanation": "La fréquence d’un processeur est mesurée en Hertz (Hz), représentant le nombre de cycles par seconde."
+        },
+        {
+          "question": "Quel composant stocke les données de façon permanente ?",
+          "options": ["RAM", "Carte graphique", "Disque dur", "Processeur"],
+          "answer": "Disque dur",
+          "explanation": "Le disque dur stocke les données même lorsque l’ordinateur est éteint."
+        },
+        {
+          "question": "Que fait un antivirus ?",
+          "options": ["Accélère Internet", "Protège contre les logiciels malveillants", "Améliore les graphismes", "Nettoie le disque dur"],
+          "answer": "Protège contre les logiciels malveillants",
+          "explanation": "Un antivirus protège l’ordinateur contre les virus et autres logiciels malveillants."
+        },
+        {
+          "question": "Que signifie l’abréviation URL ?",
+          "options": ["Uniform Resource Locator", "User Remote Link", "Universal Routing Language", "Unique Register Link"],
+          "answer": "Uniform Resource Locator",
+          "explanation": "URL signifie Uniform Resource Locator : c’est l’adresse d’une ressource sur Internet."
+        },
+        {
+          "question": "Quel langage est utilisé pour interroger une base de données ?",
+          "options": ["HTML", "CSS", "SQL", "Python"],
+          "answer": "SQL",
+          "explanation": "SQL (Structured Query Language) est utilisé pour interroger et manipuler les bases de données."
+        },
+        {
+          "question": "Quel est le rôle d’un système d’exploitation ?",
+          "options": ["Afficher des images", "Gérer les ressources de l’ordinateur", "Créer des fichiers HTML", "Envoyer des emails"],
+          "answer": "Gérer les ressources de l’ordinateur",
+          "explanation": "Un système d’exploitation gère le matériel et les logiciels de l’ordinateur."
+        },
+        {
+          "question": "Quel est le nom du premier ordinateur personnel célèbre ?",
+          "options": ["MacBook", "IBM PC", "Commodore 64", "Amiga 500"],
+          "answer": "IBM PC",
+          "explanation": "L’IBM PC est considéré comme l’un des premiers ordinateurs personnels largement adoptés."
+        },
+        {
+          "question": "Que veut dire HTTPS ?",
+          "options": ["HyperText Transfer Protocol Secure", "High Tech Protocol Service", "Hyper Transfer Tunnel Protocol", "Host Transfer Platform Secure"],
+          "answer": "HyperText Transfer Protocol Secure",
+          "explanation": "HTTPS est une version sécurisée de HTTP utilisant le chiffrement SSL/TLS."
+        },
+        {
+          "question": "Quelle entreprise a créé le système Windows ?",
+          "options": ["Apple", "Google", "IBM", "Microsoft"],
+          "answer": "Microsoft",
+          "explanation": "Windows est un système d’exploitation créé par Microsoft."
+        },
+        {
+          "question": "Quelle technologie permet une connexion sans fil à Internet ?",
+          "options": ["USB", "Ethernet", "Wi-Fi", "HDMI"],
+          "answer": "Wi-Fi",
+          "explanation": "Le Wi-Fi permet une connexion sans fil à Internet à travers des ondes radio."
+        },
+        {
+          "question": "Quel est le rôle d’un pare-feu ?",
+          "options": ["Empêcher l’accès physique", "Filtrer le trafic réseau", "Sauvegarder les fichiers", "Augmenter la vitesse du processeur"],
+          "answer": "Filtrer le trafic réseau",
+          "explanation": "Un pare-feu surveille et contrôle les connexions réseau pour protéger contre les intrusions."
+        },
+        {
+          "question": "Quelle est la principale fonction d’un routeur ?",
+          "options": ["Afficher des pages web", "Connecter des appareils à un réseau", "Jouer de la musique", "Créer des documents"],
+          "answer": "Connecter des appareils à un réseau",
+          "explanation": "Un routeur relie plusieurs appareils à un réseau local ou à Internet."
+        },
+        {
+          "question": "Qu’est-ce qu’un fichier exécutable ?",
+          "options": ["Un fichier image", "Un fichier texte", "Un fichier qui lance un programme", "Un fichier musical"],
+          "answer": "Un fichier qui lance un programme",
+          "explanation": "Un fichier exécutable contient des instructions qu’un ordinateur peut exécuter directement."
+        },
+        {
+          "question": "Que désigne l’extension de fichier .pdf ?",
+          "options": ["Portable Document Format", "Page Description File", "Public Data File", "Program Design File"],
+          "answer": "Portable Document Format",
+          "explanation": ".pdf signifie Portable Document Format, un format universel pour les documents."
+        },
+        {
+          "question": "Qu’est-ce qu’une adresse IP ?",
+          "options": ["Un mot de passe", "Une clé de cryptage", "Un identifiant unique d’un appareil sur un réseau", "Un programme de sécurité"],
+          "answer": "Un identifiant unique d’un appareil sur un réseau",
+          "explanation": "Une adresse IP identifie de façon unique un appareil sur un réseau informatique."
+        }
+
+      ]
+    },
+    {
+      "name": "HTML",
+      "questions": [
+        {
+          "question": "Quel tag HTML est utilisé pour créer un lien ?",
+          "options": ["<div>", "<span>", "<a>", "<link>"],
+          "answer": "<a>",
+          "explanation": "Le tag <a> est utilisé pour créer un lien hypertexte en HTML."
+        },
+        {
+          "question": "Quel attribut permet d’ouvrir un lien dans un nouvel onglet ?",
+          "options": ["alt", "href", "target", "rel"],
+          "answer": "target",
+          "explanation": "L’attribut target=\"_blank\" permet d’ouvrir un lien dans un nouvel onglet."
+        },
+        {
+          "question": "Quel élément HTML contient le contenu principal d’une page ?",
+          "options": ["<section>", "<article>", "<main>", "<body>"],
+          "answer": "<main>",
+          "explanation": "<main> est utilisé pour désigner le contenu principal d’une page web."
+        },
+        {
+          "question": "Quel élément HTML est utilisé pour insérer une image ?",
+          "options": ["<img>", "<pic>", "<src>", "<image>"],
+          "answer": "<img>",
+          "explanation": "<img> est l’élément HTML utilisé pour afficher une image."
+        },
+        {
+          "question": "Quel attribut HTML est utilisé pour décrire une image ?",
+          "options": ["alt", "title", "desc", "label"],
+          "answer": "alt",
+          "explanation": "L’attribut alt fournit une description textuelle d’une image."
+        },
+        {
+          "question": "Quel tag HTML est utilisé pour créer une liste à puces ?",
+          "options": ["<ul>", "<ol>", "<li>", "<dl>"],
+          "answer": "<ul>",
+          "explanation": "<ul> est utilisé pour créer une liste non ordonnée (à puces)."
+        },
+        {
+          "question": "Quel tag est utilisé pour un élément de liste ?",
+          "options": ["<li>", "<item>", "<entry>", "<ul>"],
+          "answer": "<li>",
+          "explanation": "<li> représente un élément dans une liste HTML."
+        },
+        {
+          "question": "Quel élément HTML permet de créer un formulaire ?",
+          "options": ["<input>", "<form>", "<button>", "<textarea>"],
+          "answer": "<form>",
+          "explanation": "<form> est utilisé pour créer un formulaire HTML."
+        },
+        {
+          "question": "Quel attribut permet de donner un identifiant unique à un élément ?",
+          "options": ["id", "name", "class", "ref"],
+          "answer": "id",
+          "explanation": "L’attribut id sert à identifier de manière unique un élément HTML."
+        },
+        {
+          "question": "Quel élément HTML est utilisé pour les titres principaux ?",
+          "options": ["<p>", "<h1>", "<header>", "<title>"],
+          "answer": "<h1>",
+          "explanation": "<h1> est utilisé pour les titres principaux dans une page HTML."
+        },
+        {
+          "question": "Quel attribut HTML permet de grouper plusieurs cases à cocher ?",
+          "options": ["name", "id", "value", "checked"],
+          "answer": "name",
+          "explanation": "L’attribut name permet de regrouper des champs similaires dans un formulaire."
+        },
+        {
+          "question": "Quel tag HTML permet d’insérer une ligne horizontale ?",
+          "options": ["<line>", "<hr>", "<border>", "<rule>"],
+          "answer": "<hr>",
+          "explanation": "<hr> insère une ligne horizontale pour séparer des sections de contenu."
+        },
+        {
+          "question": "Quel élément HTML permet d'ajouter un commentaire dans le code ?",
+          "options": ["<!-- Commentaire -->", "// Commentaire", "<comment>", "# Commentaire"],
+          "answer": "<!-- Commentaire -->",
+          "explanation": "En HTML, les commentaires sont écrits entre <!-- et -->."
+        },
+        {
+          "question": "Quel attribut permet de créer un bouton de soumission dans un formulaire ?",
+          "options": ["submit", "type=\"submit\"", "action", "method"],
+          "answer": "type=\"submit\"",
+          "explanation": "L’attribut type=\"submit\" sur un bouton permet de soumettre un formulaire."
+        },
+        {
+          "question": "Quelle balise HTML est utilisée pour un lien vers une feuille CSS ?",
+          "options": ["<style>", "<script>", "<css>", "<link>"],
+          "answer": "<link>",
+          "explanation": "La balise <link> permet de lier une feuille de style CSS à une page HTML."
+        },
+        {
+          "question": "Quel tag HTML structure une cellule dans un tableau ?",
+          "options": ["<cell>", "<td>", "<th>", "<tr>"],
+          "answer": "<td>",
+          "explanation": "<td> définit une cellule standard dans un tableau HTML."
+        },
+        {
+          "question": "Quelle balise définit une ligne dans un tableau HTML ?",
+          "options": ["<row>", "<line>", "<tr>", "<td>"],
+          "answer": "<tr>",
+          "explanation": "<tr> est utilisée pour définir une ligne de tableau."
+        },
+        {
+          "question": "Quel attribut HTML désactive un champ de formulaire ?",
+          "options": ["readonly", "disabled", "hidden", "inactive"],
+          "answer": "disabled",
+          "explanation": "L’attribut disabled rend un champ de formulaire inactif."
+        },
+        {
+          "question": "Quel élément HTML est utilisé pour inclure une vidéo ?",
+          "options": ["<media>", "<video>", "<movie>", "<stream>"],
+          "answer": "<video>",
+          "explanation": "La balise <video> permet d’intégrer une vidéo sur une page web."
+        },
+        {
+          "question": "Quel attribut HTML permet de spécifier une URL de destination pour un formulaire ?",
+          "options": ["href", "target", "action", "url"],
+          "answer": "action",
+          "explanation": "L’attribut action d’un formulaire spécifie l’URL vers laquelle envoyer les données."
+        }
+        
+      ]
+    },
+    {
+      "name": "CSS",
+      "questions": [
+        {
+          "question": "Quel propriété CSS change la couleur du texte ?",
+          "options": ["background-color", "text-color", "font-color", "color"],
+          "answer": "color",
+          "explanation": "La propriété CSS 'color' définit la couleur du texte."
+        },
+        {
+          "question": "Que signifie le 'C' dans CSS ?",
+          "options": ["Command", "Creative", "Cascading", "Compact"],
+          "answer": "Cascading",
+          "explanation": "CSS signifie Cascading Style Sheets (feuilles de style en cascade)."
+        },
+        {
+          "question": "Quelle propriété permet de changer la taille du texte ?",
+          "options": ["font-size", "text-height", "text-size", "font-height"],
+          "answer": "font-size",
+          "explanation": "'font-size' définit la taille de la police du texte."
+        },
+        {
+          "question": "Quelle propriété CSS aligne le texte au centre ?",
+          "options": ["text-center", "align", "text-align", "center"],
+          "answer": "text-align",
+          "explanation": "'text-align: center' aligne le texte horizontalement au centre."
+        },
+        {
+          "question": "Comment rendre un texte en gras avec CSS ?",
+          "options": ["font-weight: bold", "text-style: bold", "font-bold", "text-weight: bold"],
+          "answer": "font-weight: bold",
+          "explanation": "'font-weight' permet de définir l’épaisseur (gras) d’un texte."
+        },
+        {
+          "question": "Quel propriété ajoute une ombre à un élément ?",
+          "options": ["shadow", "box-shadow", "element-shadow", "outer-shadow"],
+          "answer": "box-shadow",
+          "explanation": "'box-shadow' ajoute une ombre autour d’un élément."
+        },
+        {
+          "question": "Quelle unité relative dépend de la taille du parent ?",
+          "options": ["px", "em", "%", "rem"],
+          "answer": "%",
+          "explanation": "L’unité % est relative à la taille du parent."
+        },
+        {
+          "question": "Quelle propriété permet d’ajuster l’espacement entre les lettres ?",
+          "options": ["letter-spacing", "word-spacing", "text-spacing", "font-gap"],
+          "answer": "letter-spacing",
+          "explanation": "'letter-spacing' ajuste l’espace entre les lettres."
+        },
+        {
+          "question": "Comment faire une bordure en CSS ?",
+          "options": ["border", "line", "stroke", "box-border"],
+          "answer": "border",
+          "explanation": "La propriété 'border' permet de dessiner une bordure autour d’un élément."
+        },
+        {
+          "question": "Quelle propriété contrôle l’arrière-plan d’un élément ?",
+          "options": ["background-color", "bg", "fill", "color"],
+          "answer": "background-color",
+          "explanation": "'background-color' définit la couleur de fond."
+        },
+        {
+          "question": "Quelle propriété permet de cacher un élément ?",
+          "options": ["hidden", "display: none", "invisible", "opacity: 0"],
+          "answer": "display: none",
+          "explanation": "'display: none' retire un élément du flux de la page."
+        },
+        {
+          "question": "Quelle propriété permet de rendre un élément flexible ?",
+          "options": ["flex", "display: flex", "layout: flex", "flexbox"],
+          "answer": "display: flex",
+          "explanation": "'display: flex' active le modèle Flexbox."
+        },
+        {
+          "question": "Quelle propriété permet de faire un espacement intérieur ?",
+          "options": ["padding", "margin", "spacing", "border"],
+          "answer": "padding",
+          "explanation": "'padding' définit l’espace intérieur entre le contenu et les bords."
+        },
+        {
+          "question": "Et pour l’espacement extérieur ?",
+          "options": ["padding", "margin", "spacing", "gap"],
+          "answer": "margin",
+          "explanation": "'margin' crée un espace extérieur entre les éléments."
+        },
+        {
+          "question": "Quelle propriété permet de transformer le texte en majuscules ?",
+          "options": ["font-transform", "text-transform", "uppercase", "text-uppercase"],
+          "answer": "text-transform",
+          "explanation": "'text-transform: uppercase' met le texte en majuscules."
+        },
+        {
+          "question": "Comment centrer un élément en flexbox ?",
+          "options": ["justify-center", "center", "align-items", "margin: auto"],
+          "answer": "justify-center",
+          "explanation": "'justify-content: center' centre horizontalement les enfants."
+        },
+        {
+          "question": "Quelle propriété permet de faire un fond dégradé ?",
+          "options": ["background-image", "background-gradient", "linear-gradient", "background-style"],
+          "answer": "linear-gradient",
+          "explanation": "On utilise 'background: linear-gradient(...)' pour un dégradé."
+        },
+        {
+          "question": "Comment définir la taille d’un élément ?",
+          "options": ["width / height", "size", "box-size", "dimensions"],
+          "answer": "width / height",
+          "explanation": "'width' et 'height' définissent la largeur et la hauteur."
+        },
+        {
+          "question": "Quelle propriété rend un élément transparent ?",
+          "options": ["opacity", "alpha", "visibility", "transparent"],
+          "answer": "opacity",
+          "explanation": "'opacity' permet de contrôler la transparence d’un élément."
+        }
+        
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "questions": [
+        {
+          "question": "Comment déclare-t-on une variable constante en JavaScript ?",
+          "options": ["let", "var", "const", "define"],
+          "answer": "const",
+          "explanation": "'const' déclare une variable dont la valeur ne peut pas être réaffectée."
+        },
+        {
+          "question": "Quel type de données est retourné par typeof null ?",
+          "options": ["null", "object", "undefined", "boolean"],
+          "answer": "object",
+          "explanation": "typeof null retourne 'object' (c’est un bug historique de JavaScript)."
+        },
+        {
+          "question": "Quelle méthode convertit une chaîne en entier ?",
+          "options": ["parseInt()", "Number()", "toInteger()", "parseFloat()"],
+          "answer": "parseInt()",
+          "explanation": "parseInt() convertit une chaîne de caractères en un entier."
+        },
+        {
+          "question": "Quel est le bon mot-clé pour une fonction ?",
+          "options": ["method", "func", "function", "define"],
+          "answer": "function",
+          "explanation": "Le mot-clé 'function' sert à déclarer une fonction."
+        },
+        {
+          "question": "Que retourne 'typeof undefined' ?",
+          "options": ["object", "null", "undefined", "string"],
+          "answer": "undefined",
+          "explanation": "'undefined' est un type en JavaScript."
+        },
+        {
+          "question": "Comment concatène-t-on des chaînes ?",
+          "options": ["join()", "add()", "+", "concat()"],
+          "answer": "+",
+          "explanation": "L’opérateur + permet de concaténer des chaînes."
+        },
+        {
+          "question": "Comment vérifie-t-on le type d'une variable ?",
+          "options": ["type()", "typeof", "isType", "getType"],
+          "answer": "typeof",
+          "explanation": "typeof renvoie le type d’une variable."
+        },
+        {
+          "question": "Quelle méthode supprime le dernier élément d’un tableau ?",
+          "options": ["pop()", "remove()", "delete()", "shift()"],
+          "answer": "pop()",
+          "explanation": "pop() supprime le dernier élément d’un tableau."
+        },
+        {
+          "question": "Comment transforme-t-on une chaîne en nombre ?",
+          "options": ["toInt()", "convert()", "Number()", "parse()"],
+          "answer": "Number()",
+          "explanation": "Number() transforme une chaîne en nombre."
+        },
+        {
+          "question": "Comment commenter une ligne en JavaScript ?",
+          "options": ["<!-- -->", "#", "//", "/* */"],
+          "answer": "//",
+          "explanation": "'//' est utilisé pour commenter une ligne en JavaScript."
+        },
+        {
+          "question": "Quelle boucle vérifie la condition avant d’exécuter ?",
+          "options": ["do...while", "for", "while", "foreach"],
+          "answer": "while",
+          "explanation": "La boucle while vérifie la condition avant chaque itération."
+        },
+        {
+          "question": "Quelle méthode ajoute un élément en fin de tableau ?",
+          "options": ["push()", "add()", "insert()", "append()"],
+          "answer": "push()",
+          "explanation": "push() ajoute un élément à la fin d’un tableau."
+        },
+        {
+          "question": "Comment définit-on un objet ?",
+          "options": ["[]", "<>", "{}", "()"],
+          "answer": "{}",
+          "explanation": "Un objet en JavaScript se déclare avec des accolades {}."
+        },
+        {
+          "question": "Quelle méthode retourne la longueur d'une chaîne ?",
+          "options": ["length()", "getLength()", "size()", "length"],
+          "answer": "length",
+          "explanation": "'length' est une propriété, pas une fonction."
+        },
+        {
+          "question": "Quelle valeur est falsy ?",
+          "options": ["'0'", "'false'", "null", "[]"],
+          "answer": "null",
+          "explanation": "null est falsy, contrairement à certaines chaînes ou tableaux."
+        },
+        {
+          "question": "Quelle méthode vérifie si un tableau contient un élément ?",
+          "options": ["has()", "includes()", "exist()", "contain()"],
+          "answer": "includes()",
+          "explanation": "includes() retourne true si l’élément est présent."
+        },
+        {
+          "question": "Quelle méthode convertit un objet en JSON ?",
+          "options": ["JSON.encode()", "toJSON()", "JSON.stringify()", "stringify()"],
+          "answer": "JSON.stringify()",
+          "explanation": "JSON.stringify() convertit un objet en chaîne JSON."
+        },
+        {
+          "question": "Comment appelle-t-on une fonction passée en paramètre ?",
+          "options": ["callback", "handler", "parameter", "hook"],
+          "answer": "callback",
+          "explanation": "Une fonction passée à une autre est une callback."
+        },
+        {
+          "question": "Que retourne une fonction sans return ?",
+          "options": ["undefined", "null", "0", "false"],
+          "answer": "undefined",
+          "explanation": "Une fonction sans return retourne undefined par défaut."
+        },
+        {
+          "question": "Comment créer une fonction fléchée ?",
+          "options": ["function() => {}", "=> ()", "() => {}", "function => {}"],
+          "answer": "() => {}",
+          "explanation": "Une fonction fléchée s’écrit '() => {}'."
+        },
+        {
+          "question": "Comment déclare-t-on une variable constante en JavaScript ?",
+          "options": ["let", "var", "const", "define"],
+          "answer": "const",
+          "explanation": "'const' déclare une variable dont la valeur ne peut pas être réaffectée."
+        },
+        {
+          "question": "Quel type de données est retourné par typeof null ?",
+          "options": ["null", "object", "undefined", "boolean"],
+          "answer": "object",
+          "explanation": "typeof null retourne 'object' (c’est un bug historique de JavaScript)."
+        }
+        
+      ]
+    },
+    {
+      "name": "SQL",
+      "questions": [
+        {
+          "question": "Quelle commande SQL permet de sélectionner des données ?",
+          "options": ["SELECT", "GET", "FETCH", "RETRIEVE"],
+          "answer": "SELECT",
+          "explanation": "La commande SELECT permet de récupérer des données dans une base de données."
+        },
+        {
+          "question": "Quel mot-clé permet de trier les résultats d’une requête ?",
+          "options": ["SORT", "GROUP BY", "ORDER BY", "RANK"],
+          "answer": "ORDER BY",
+          "explanation": "ORDER BY trie les résultats d'une requête SQL selon une ou plusieurs colonnes."
+        },
+        {
+          "question": "Quel mot-clé SQL est utilisé pour insérer de nouvelles données ?",
+          "options": ["INSERT", "ADD", "APPEND", "NEW"],
+          "answer": "INSERT",
+          "explanation": "INSERT INTO permet d’ajouter de nouvelles lignes dans une table."
+        },
+        {
+          "question": "Quelle clause est utilisée pour filtrer les lignes en SQL ?",
+          "options": ["WHERE", "HAVING", "IF", "FILTER"],
+          "answer": "WHERE",
+          "explanation": "La clause WHERE permet de filtrer les résultats selon une condition."
+        },
+        {
+          "question": "Comment supprime-t-on une table en SQL ?",
+          "options": ["DELETE TABLE", "REMOVE TABLE", "DROP TABLE", "CLEAR TABLE"],
+          "answer": "DROP TABLE",
+          "explanation": "DROP TABLE supprime complètement une table et ses données."
+        },
+        {
+          "question": "Quelle clause regroupe les résultats selon une colonne ?",
+          "options": ["GROUP BY", "ORDER BY", "UNION", "CLUSTER"],
+          "answer": "GROUP BY",
+          "explanation": "GROUP BY est utilisée pour regrouper les résultats selon des valeurs identiques."
+        },
+        {
+          "question": "Quelle commande supprime des lignes d’une table ?",
+          "options": ["DELETE", "REMOVE", "DROP", "CUT"],
+          "answer": "DELETE",
+          "explanation": "DELETE supprime une ou plusieurs lignes d’une table."
+        },
+        {
+          "question": "Que fait la clause LIMIT ?",
+          "options": ["Impose un maximum de résultats", "Trie les résultats", "Supprime les doublons", "Filtre les lignes nulles"],
+          "answer": "Impose un maximum de résultats",
+          "explanation": "LIMIT permet de restreindre le nombre de lignes retournées."
+        },
+        {
+          "question": "Quelle commande modifie des données existantes ?",
+          "options": ["UPDATE", "MODIFY", "CHANGE", "SET"],
+          "answer": "UPDATE",
+          "explanation": "UPDATE permet de modifier des données déjà présentes dans une table."
+        },
+        {
+          "question": "Quel mot-clé est utilisé pour éviter les doublons ?",
+          "options": ["UNIQUE", "DISTINCT", "NO DUPLICATE", "FILTER"],
+          "answer": "DISTINCT",
+          "explanation": "DISTINCT permet d’afficher uniquement les lignes uniques."
+        },
+        {
+          "question": "Quelle clause vérifie une condition après GROUP BY ?",
+          "options": ["WHERE", "HAVING", "IF", "FILTER"],
+          "answer": "HAVING",
+          "explanation": "HAVING permet de filtrer les résultats d’un GROUP BY."
+        },
+        {
+          "question": "Quelle commande crée une nouvelle table ?",
+          "options": ["MAKE TABLE", "CREATE TABLE", "NEW TABLE", "TABLE CREATE"],
+          "answer": "CREATE TABLE",
+          "explanation": "CREATE TABLE permet de créer une nouvelle structure de table."
+        },
+        {
+          "question": "Que signifie l’abréviation SQL ?",
+          "options": ["Structured Question Language", "System Query List", "Structured Query Language", "Simple Query Language"],
+          "answer": "Structured Query Language",
+          "explanation": "SQL signifie Structured Query Language."
+        },
+        {
+          "question": "Quel type SQL représente une valeur textuelle ?",
+          "options": ["VARCHAR", "INTEGER", "BOOLEAN", "TEXTUAL"],
+          "answer": "VARCHAR",
+          "explanation": "VARCHAR permet de stocker des chaînes de texte."
+        },
+        {
+          "question": "Comment sélectionne-t-on toutes les colonnes ?",
+          "options": ["SELECT ALL", "SELECT *", "SELECT COLUMNS", "SELECT EVERYTHING"],
+          "answer": "SELECT *",
+          "explanation": "SELECT * récupère toutes les colonnes de la table."
+        },
+        {
+          "question": "Quelle commande fusionne les résultats de deux requêtes ?",
+          "options": ["JOIN", "UNION", "MERGE", "GLUE"],
+          "answer": "UNION",
+          "explanation": "UNION combine les résultats de deux requêtes compatibles."
+        },
+        {
+          "question": "Quel mot-clé lie deux tables selon une condition ?",
+          "options": ["LINK", "JOIN", "BIND", "MERGE"],
+          "answer": "JOIN",
+          "explanation": "JOIN permet de relier des tables selon une relation définie."
+        },
+        {
+          "question": "Quelle clause trie les résultats par ordre décroissant ?",
+          "options": ["ORDER DESC", "ORDER BY DESC", "SORT DESC", "DESC"],
+          "answer": "ORDER BY DESC",
+          "explanation": "ORDER BY colonne DESC trie du plus grand au plus petit."
+        },
+        {
+          "question": "Que fait l’opérateur LIKE ?",
+          "options": ["Trie les résultats", "Filtre les doublons", "Cherche une correspondance partielle", "Convertit les chaînes"],
+          "answer": "Cherche une correspondance partielle",
+          "explanation": "LIKE permet de faire des recherches avec des motifs comme % ou _."
+        },
+        {
+          "question": "Quelle clause combine INNER et OUTER JOIN selon le contexte ?",
+          "options": ["SMART JOIN", "AUTO JOIN", "FULL OUTER JOIN", "MERGE JOIN"],
+          "answer": "FULL OUTER JOIN",
+          "explanation": "FULL OUTER JOIN retourne toutes les lignes de deux tables, même sans correspondance."
+        } 
+        
+      ]
+    }
+  ]
+    }
