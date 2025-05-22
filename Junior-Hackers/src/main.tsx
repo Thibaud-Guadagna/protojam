@@ -7,6 +7,7 @@ import Home from "./pages/home.tsx";
 import Game from "./pages/game.tsx";
 import PlayerName from "./pages/playername.tsx";
 
+
 const router = createBrowserRouter([
   {
     element: <App />,
