@@ -1,9 +1,23 @@
+import { useNavigate } from "react-router-dom";
+
 function PlayerName() {
- 
+  const navigate = useNavigate();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const player1 = form.player1.value.trim();
+    const player2 = form.player2.value.trim();
+
+    if (player1 && player2 && player1 !== player2) {
+      navigate(`/game?player1=${encodeURIComponent(player1)}&player2=${encodeURIComponent(player2)}`);
+    }
+  };
+
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-purple-500 to-indigo-600 px-4">
+    <main className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br #ffedbb">
       <form
-       
+        onSubmit={handleSubmit}
         className="bg-white p-8 rounded-2xl shadow-lg space-y-6 w-full max-w-sm"
       >
         <h2 className="text-2xl font-bold text-center text-gray-800">Entrer les noms des joueurs</h2>
