@@ -5,7 +5,7 @@ import App from "./App.tsx";
 import { RouterProvider, createBrowserRouter } from "react-router";
 import Home from "./pages/home.tsx";
 import Game from "./pages/game.tsx";
-import BoardGame from "./components/boardGame.tsx";
+
 
 const router = createBrowserRouter([
 	{
