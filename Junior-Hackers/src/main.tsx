@@ -7,6 +7,8 @@ import Home from "./pages/home.tsx";
 import Game from "./pages/game.tsx";
 import PlayerName from "./pages/PlayerName.tsx";
 import DualGame from "./pages/dualGame.tsx"
+import Contact from "./pages/Contact.tsx";
+
 
 
 const router = createBrowserRouter([
@@ -26,12 +28,17 @@ const router = createBrowserRouter([
         element: <PlayerName />,
       },
       {
+
         path: "/DualGame", 
         element: <DualGame />,
       },
+      {
+        path: "/Contact",
+        element: <Contact/>,
+      },
 
     ],
-  },
+  }
 ]);
 
 const rootElement = document.getElementById("root");
