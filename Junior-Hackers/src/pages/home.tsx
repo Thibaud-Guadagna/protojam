@@ -2,8 +2,10 @@ import ModalExample from "../components/modal";
 import AnimatedTitle from "../components/animatedTitle";
 import AlgobotWithSpeech from "../components/AlgobotWhiteSpeech";
 import FloatingElements from "../components/floatingElements";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+	const navigate = useNavigate();
 	return (
 		<main className="min-h-screen flex flex-col  justify-center text-center px-4">
 			<FloatingElements />
@@ -19,6 +21,7 @@ function Home() {
 			<section className="flex justify-around gap-4 mt-10 md:mt-20">
 				<button
 					type="button"
+					onClick={() => navigate("/Game")}
 					className="border-2 border-gray-800 text-gray-800 font-semibold rounded-sm px-4 py-2
              transition-transform duration-150 ease-in-out
              hover:-translate-y-1 hover:shadow-md hover:border-gray-900 hover:text-gray-900
