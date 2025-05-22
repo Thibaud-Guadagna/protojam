@@ -18,9 +18,9 @@ const AlgobotWithSpeech = () => {
 	}, [showBubble]);
 
 	return (
-		<div className="relative flex justify-center mt-15 md:mt-25">
+		<div className="relative flex justify-center mt-15 md:mt-30">
 			{showBubble && (
-				<div className="absolute -top-16 bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm shadow-md text-gray-800 max-w-[220px] text-center z-10 animate-fade-in">
+				<div className="absolute -top-16 bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-gray-800 max-w-[220px] text-center z-10 animate-fade-in">
 					<p>👋 Salut, tu viens jouer avec moi&nbsp;?</p>
 				</div>
 			)}
@@ -29,7 +29,7 @@ const AlgobotWithSpeech = () => {
 				type="button"
 				onClick={handleClick}
 				onKeyDown={(e) => e.key === "Enter" && handleClick()}
-				className="w-40 h-40 lg:w-60 lg:h-60 p-0 border-none bg-transparent cursor-pointer drop-shadow-lg transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-6"
+				className="w-40 h-40 lg:w-80 lg:h-80 p-0 border-none bg-transparent cursor-pointer  transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-6"
 				aria-label="Algobot"
 			>
 				<img

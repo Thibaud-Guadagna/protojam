@@ -10,7 +10,12 @@ function PlayerName() {
     const player2 = form.player2.value.trim();
 
     if (player1 && player2 && player1 !== player2) {
-      navigate(`/game?player1=${encodeURIComponent(player1)}&player2=${encodeURIComponent(player2)}`);
+      // Enregistre les noms dans le localStorage
+      localStorage.setItem("player1", player1);
+      localStorage.setItem("player2", player2);
+
+      // Redirection vers le jeu
+      navigate("/DualGame");
     }
   };
 
@@ -41,6 +46,8 @@ function PlayerName() {
         <button
           type="submit"
           className="w-full bg-indigo-600 text-white py-2 rounded-xl hover:bg-indigo-700 transition"
+          
+          
         >
           Lancer le jeu
         </button>

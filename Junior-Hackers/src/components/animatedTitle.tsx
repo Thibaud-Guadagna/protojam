@@ -4,7 +4,7 @@ interface AnimatedTitleProps {
 
 const AnimatedTitle = ({ text }: AnimatedTitleProps) => {
 	return (
-		<h1 className="flex justify-center gap-[2px] text-[#fc752c] text-3xl font-bold mt-10 md:mt-20">
+		<h1 className="flex justify-center gap-[2px] text-[#fc752c] text-3xl md:text-8xl font-bold mt-10 md:mt-20">
 			{[...text].map((char, i) => {
 				const key = `${char}-${i}`; // Combine char + index for a more stable key
 				return (

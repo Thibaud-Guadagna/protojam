@@ -1,28 +1,54 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { CaseId } from "../components/questionnaire";
 import {
 	getRandomQuestionFromCase,
 	validateAnswer,
 } from "../components/questionnaire";
 import Button from "./ui/button";
+import PlayerName from "../pages/PlayerName";
 
 interface QuestionBubbleProps {
 	caseId: CaseId;
 	onClose: (wasCorrect: boolean) => void;
-
 	onResult?: (isCorrect: boolean) => void;
+	playerName?: string;
+	excludeIds?: string[];
+	onQuestionUsed?: (id: string) => void;
+	isClosing?: boolean;
 }
+
+const name1 = localStorage.getItem("player1") ?? "Joueur 1";
+const name2 = localStorage.getItem("player2") ?? "Joueur 2";
 
 const QuestionBubble: React.FC<QuestionBubbleProps> = ({
 	caseId,
 	onClose,
 	onResult,
+	playerName,
+	excludeIds,
+	onQuestionUsed,
+	isClosing,
 }) => {
-	const [question] = useState(() => getRandomQuestionFromCase(caseId));
+	const [question] = useState(() => {
+		const q = getRandomQuestionFromCase(caseId, excludeIds);
+		if (q && onQuestionUsed) {
+			onQuestionUsed(q.id); // ✅ enregistre dès le tirage
+		}
+		return q;
+	});
+	const activeName = playerName === "player1" ? name1 : name2;
 	const [selected, setSelected] = useState<string | null>(null);
 	const [feedback, setFeedback] = useState<string | null>(null);
 	const [explanation, setExplanation] = useState<string | null>(null);
 	const [wasCorrect] = useState<boolean | null>(null);
+	const [appear, setAppear] = useState(false);
+
+	useEffect(() => {
+		const timeout = setTimeout(() => {
+			setAppear(true);
+		}, 10); // trigger après le premier render
+		return () => clearTimeout(timeout);
+	}, []);
 
 	if (!question) return <p>Question introuvable.</p>;
 
@@ -39,13 +65,21 @@ const QuestionBubble: React.FC<QuestionBubbleProps> = ({
 	};
 
 	return (
-		<div className="relative max-w-2xl mx-auto mt-10 p-6 bg-[#ffd8a8] border rounded-xl shadow-lg flex flex-col md:flex-row gap-6 animate-fade-in">
-			{/* Image Algobot */}
-			<img
-				src="/Algobot_parle.png"
-				alt="Algobot"
-				className="w-28 h-28 object-contain self-center md:self-start"
-			/>
+		<div
+			className={`relative max-w-2xl mx-auto mt-10 p-6 bg-[#ffd8a8] border rounded-xl shadow-lg flex flex-col md:flex-row gap-6 transition-all duration-500 ease-out transform
+${appear && !isClosing ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+		>
+			<div>
+				{/* Image Algobot */}
+				<img
+					src="/Algobot_parle.png"
+					alt="Algobot"
+					className="w-28 h-28 object-contain self-center md:self-start ml-11 mb-10"
+				/>
+				<p className="text-xl text-center font-semibold mt-2">
+					{activeName}, à toi de jouer !
+				</p>
+			</div>
 
 			{/* Bulle question */}
 			<div className="flex-1 ">
