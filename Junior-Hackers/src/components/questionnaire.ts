@@ -1,4 +1,4 @@
-import questionsData from "../data/question.json";
+import questionsData from "../data/question2.json";
 
 export type CaseId =
 	| "Départ"
@@ -14,14 +14,18 @@ export type CaseId =
 	| "X"
 	| "Arrivée";
 
-interface Question {
+export interface Question {
+	id: string; // ✅ Ajoute cette ligne
 	question: string;
 	options: string[];
 	answer: string;
 	explanation: string;
 }
 
-export function getRandomQuestionFromCase(caseId: CaseId): Question | null {
+export function getRandomQuestionFromCase(
+	caseId: CaseId,
+	excludeIds: string[] = [],
+): Question | null {
 	let category = "";
 
 	if (caseId === "Départ" || caseId === "I") category = "Informatique";
@@ -35,16 +39,25 @@ export function getRandomQuestionFromCase(caseId: CaseId): Question | null {
 	);
 
 	if (!categoryBlock) {
-		console.error(`Catégorie \"${category}\" introuvable`);
+		console.error(`Catégorie "${category}" introuvable`);
 		return null;
 	}
 
-	const randomIndex = Math.floor(
-		Math.random() * categoryBlock.questions.length,
+	// ✅ Exclure les questions déjà posées
+	const filteredQuestions = categoryBlock.questions.filter(
+		(q) => !excludeIds.includes(q.id),
 	);
-	return categoryBlock.questions[randomIndex];
-}
 
+	if (filteredQuestions.length === 0) {
+		console.warn(
+			`Toutes les questions de la catégorie "${category}" ont déjà été posées.`,
+		);
+		return null;
+	}
+
+	const randomIndex = Math.floor(Math.random() * filteredQuestions.length);
+	return filteredQuestions[randomIndex];
+}
 export function validateAnswer(question: Question, selectedAnswer: string) {
 	const isCorrect = question.answer === selectedAnswer;
 	return {

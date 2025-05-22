@@ -5,7 +5,8 @@ import App from "./App.tsx";
 import { RouterProvider, createBrowserRouter } from "react-router";
 import Home from "./pages/home.tsx";
 import Game from "./pages/game.tsx";
-import PlayerName from "./pages/playername.tsx";
+import PlayerName from "./pages/PlayerName.tsx";
+import DualGame from "./pages/dualGame.tsx"
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
         path: "/playername", 
         element: <PlayerName />,
       },
+      {
+        path: "/DualGame", 
+        element: <DualGame />,
+      },
+
     ],
   },
 ]);
