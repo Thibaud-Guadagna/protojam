@@ -1,4 +1,4 @@
-import BoardGame from "../components/boarGame";
+import BoardGame from "../components/boardGame";
 
 export default function Game() {
 	return (
