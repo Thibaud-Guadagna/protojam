@@ -1,9 +1,26 @@
-
 function Contact() {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget as HTMLFormElement;
+    const firstname = form.firstname.value;
+    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+    const email = form.email.value;
+    const message = form.message.value;
+
+    console.log("Prénom :", firstname);
+    console.log("Nom :", name);
+    console.log("Email :", email);
+    console.log("Message :", message);
+
+    form.reset();
+  };
+
 
   return (
     <main className="min-h-screen flex items-center justify-center #ffedbb">
       <form
+        onSubmit={handleSubmit}
         className="bg-white p-8 rounded-2xl shadow-md w-full max-w-md space-y-6"
       >
         <h2 className="text-2xl font-bold text-center text-gray-800">Contactez-nous</h2>
